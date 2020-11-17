@@ -1,0 +1,644 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+
+
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+    .hide {
+  display: none;
+}
+#butt{
+    background: rgb(34, 34, 34);
+}
+
+
+p{
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+}
+    *{
+       font-family: 'Poppins', sans-serif; 
+    }
+    body{
+      background: rgb(250, 250, 250);
+     
+   
+    }
+    #code::-webkit-scrollbar {
+    display: none;
+    }
+    #cat:focus{
+        background: #000 !important;
+        color: white !important;
+    }
+    #contentx img{
+      width: 100%;
+      margin-top: 2%;
+      margin-bottom: 2%;
+    }
+    
+    p{
+      font-size: 2vh;
+    }
+   
+    
+    #minright{
+      font-size: 10px;
+      background: rgba(0, 132, 255, 0.8);
+    }
+    
+    #infi{
+      font-size: 8vh;
+    }
+    #foothot{
+      font-family: 'Raleway', sans-serif;
+    }
+    #footbot{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .carousel .carousel-control-prev-icon {
+    background-image: none;
+    }
+    .carousel .carousel-control-next-icon {
+    background-image: none;
+    }
+    .carousel-indicators li{
+      background-color: rgba(245, 245, 220, 0);
+    }
+    @media screen and (max-width: 767px) {
+       #viewcar {
+          height: 50vh;
+        }
+       #viewcar2 {
+          border-radius: 15px;
+        }
+        #biglogy{
+          float: left;
+        }
+        #infi{
+          font-size: 5vh;
+        }
+        
+      }
+      @media screen and (max-width: 991px){
+        #map{
+            display: none;
+        }
+      }
+</style>
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logy.AI</title>
+</head>
+<body>
+
+
+
+    <!--Navbar-->
+    <nav class="sticky-top" >
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="box-shadow: none;border-bottom: solid 5px rgb(53, 138, 235);">
+        <div class="container ">
+        
+            <!-- Navbar brand -->
+            <a class="navbar-brand p-0" href="https://logy.ai/" style="font-family: 'Poppins', sans-serif;font-weight: 600;font-size: 30px;">Logy.<span style="color: #428bca;">AI</span></a>
+          
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+              aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="basicExampleNav">
+          
+              <!-- Links -->
+              <ul class="mr-auto"></ul>
+              <!-- Links -->
+          
+              <form class="form-inline p-0 m-0">
+                <div class="md-form my-0 mx-3 ">
+                  <a href="https://logy.ai/" class="" style="font-weight:500 ;font-size: 12px;color: #5697d0;">HOME</a>
+                </div>
+                <div class="md-form my-0 mx-3 " id="p1">
+                  <a href="/articles/" class="text-white" style="font-weight:500 ;font-size: 12px;">ARTICLES</a>
+                </div>
+                <div class="md-form my-0 mx-3 " id="p1">
+                  <a href="/portal.html" class="text-white" style="font-weight:500 ;font-size: 12px;">CASE STUDIES</a>
+                </div>
+                <div class="md-form my-0 mx-3 " id="p1">
+                  <a href="/articles/publications/" class="text-white" style="font-weight:500 ;font-size: 12px;">PUBLICATIONS</a>
+                </div>
+              </form>
+            </div>
+            <!-- Collapsible content -->
+          
+        </div>
+        </nav>
+    </nav>
+  <!--/.Navbar-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ <div class="px-md-5 mt-4 mb-4">
+
+    <div class="row">
+        <div class="col-md-2 ">
+            <div class="sticky-top px-3 bg-white py-3 rounded py-3" style="top: 120px;" id="map">
+
+                <h4>Contents</h4>
+                <hr>
+                <a class="my-1" href="#p1"><p  class="my-3">Introduction</p></a>
+                <a class="my-1" href="#p2"><p  class="my-3">Pre-requisites</p></a>
+                <a class="my-1" href="#p3"><p  class="my-3 ">Get started</p></a>
+                <a class="my-1" href="#p4"><p  class="my-3">Describing the response</p></a>
+                <a class="my-1" href="#p5"><p  class="my-3">Success</p></a>
+                <a class="my-1" href="#p6"><p  class="my-3">Request Aborted</p></a>
+                
+            </div>
+            
+            
+        </div>
+        <div class="col-md-10">
+            <h1 class="px-3 " >
+              <strong>
+
+                Documentation
+              </strong>
+            </h1>
+            <div class="col-md-3 ml-3 mb-4 " style="height: 2px;background: #5697d0;width: 75%;"></div>
+             
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    
+                    <h4 class="px-3" ><strong>Introduction</strong> </h4>
+                    <p class="px-3">
+                        The MyDentist.AI API is powered by Logy.AI, it lets you get AI powered dental screening results within minutes. A simple HTTPS request allows you to interact with the system. This API can easily be integrated into your application with just about any programming language.
+                        <br id="p2">
+                        <br>
+                        We use RESTful API’s for all communication between your application and our servers. All requests are served in the form of a JSON response with a status code and a human-readable response.</p>
+                        <h4 class="px-3 pt-4" ><strong>Pre-requisites</strong> </h4>
+                        <p class="px-3">
+                            API endpoint: &lt;api_endpoint&gt;
+                            <br>
+                            <br>
+                            The API endpoint is the location where you send your requests for availing services provided by MyDentis.AI.                            
+                            <br>
+                            <br>
+                            SecretKey: &lt;secret_Key&gt;
+                            <br>
+                            <br id="p3">
+                            secret_key is a unique confidential key generated for you to enable us to identify the source of the request. Please keep the secret key in a safe place and in trusted hands. This is one of the primary pieces of information used to keep track of the number of requests your make. 
+                            <br>
+                            <br>
+                            General knowledge of making HTTP requests is essential to effectively communicate with the API endpoint provided here.
+                            </p>
+                            <h4 class="px-3 pt-4" id="p4"><strong>Get started</strong> </h4>
+                            <p class="px-3">
+                                We will be showcasing the use of a simple curl command to interact with the APIs. For generating a secret key and the API endpoint for your business please contact <a href="mailto:humans@logy.ai"> humans@logy.ai</a>. Always send only one image at a time. There should be a minimum gap of 60 seconds in between consecutive request made by one user to the server. The method of the request made should be POST.
+                            </p>
+                
+                
+                
+                
+                </div>
+        
+        
+        
+        
+        
+        
+        
+                <div class="col-md-6 " style="height: 100%;">
+                  <h6 class="mt-0 px-3"><strong>Curl Command:</strong>  </h6>
+            <div class="map-container mb-1 px-3">
+                <div class="inner-basic row px-3 division-map div-toggle" data-target=".division-details" id="divisiondetail">
+                  <a class="map-point-sm px-2  text-white rounded mx-1" data-show=".darwin" id="butt">
+                    <div class="content">
+                      <div class="centered-y">
+                        <p>Curl</p>
+                      </div>
+                    </div>
+                </a>
+                <!--
+
+                  <a class="map-point-sm px-2  text-white rounded mx-1" data-show=".ptown" id="butt">
+                    <div class="content">
+                      <div class="centered-y">
+                        <p>soon</p>
+                      </div>
+                    </div>
+                </a>
+                -->
+                  
+                </div><!-- end inner basic -->
+              </div>
+              
+              
+              <div class="map-container px-3">
+                <div class="inner-basic division-details">
+<div class="initialmsg p-4 bg-dark rounded" >
+<div class="sample-code ">
+<pre class="text-white small" translate="no" dir="ltr" id="code">
+curl -F image=@test.jpg -F secret_key="&lt;secret_key&gt;" "&lt;api_endpoint&gt;"</pre>
+</div>
+</div>
+<div class="darwin hide p-4 bg-dark rounded" >
+<div class="sample-code ">
+<pre class="text-white small" translate="no" dir="ltr" id="code">
+curl -F image=@test.jpg -F secret_key="&lt;secret_key&gt;" "&lt;api_endpoint&gt;"</pre>
+</div>
+</div>
+<div class="ptown hide p-4 bg-dark rounded" >
+<div class="sample-code ">
+<pre class="text-white small" translate="no" dir="ltr" id="code">
+coming soon..</pre>
+</div>
+</div>
+
+                  
+                  
+                </div>
+              </div>
+        
+<h6 class="mt-4 px-3"><strong> JSON Response:</strong> </h6>
+<div class=" p-4 mx-3 bg-dark rounded" style="height: 100%;">
+<div class="sample-code ">
+<pre class="text-white" style="height: 500px;" translate="no" dir="ltr" id="code">
+{
+"status": 0,
+"response": {
+"findings": [
+{
+"xmin": "0.5546841621398926",
+"xmax": "0.6571839451789856",
+"ymin": "0.76256263256073",
+"ymax": "0.8819600343704224",
+"pretemp_diction": "calculus",
+"probability": "99%"
+},
+{
+"xmin": " 0.46138641238212585",
+"xmax": "0.5673986077308655",
+"ymin": "0.7713060975074768",
+"ymax": "0.8837106823921204",
+"pretemp_diction": "calculus",
+"probability": "97%"
+},
+{
+"xmin": " 0.10733617842197418",
+"xmax": "0.2167741358280182",
+"ymin": "0.3220311105251312",
+"ymax": "0.45158177614212036",
+"pretemp_diction": "calculus",
+"probability": "79%"
+},
+{
+"xmin": " 0.5396254062652588",
+"xmax": "0.6943997144699097",
+"ymin": "0.7349425554275513",
+"ymax": "0.8890471458435059",
+"pretemp_diction": "calculus",
+"probability": "75%"
+},
+{
+"xmin": " 0.36077529191970825",
+"xmax": "0.4837389290332794",
+"ymin": "0.7236100435256958",
+"ymax": "0.8615214228630066",
+"pretemp_diction": "calculus",
+"probability": "74%"
+},
+{
+"xmin": "0.7943840026855469",
+"xmax": "0.9109380841255188",
+"ymin": "0.43584325909614563",
+"ymax": "0.565607488155365",
+"pretemp_diction": "stain",
+"probability": "95%"
+},
+{
+"xmin": " 0.11775173246860504",
+"xmax": "0.25683271884918213",
+"ymin": "0.42054280638694763",
+"ymax": "0.5837825536727905",
+"pretemp_diction": "stain",
+"probability": "86%"
+},
+{
+"xmin": " 0.09542263299226761",
+"xmax": "0.20727592706680298",
+"ymin": "0.3415636122226715",
+"ymax": "0.465736448764801",
+"pretemp_diction": "stain",
+"probability": "84%"
+},
+{
+"xmin": " 0.45230239629745483",
+"xmax": "0.5688522458076477",
+"ymin": "0.7824761867523193",
+"ymax": "0.8939729928970337",
+"pretemp_diction": "stain",
+"probability": "77%"
+},
+{
+"xmin": " 0.3552851974964142",
+"xmax": "0.47863930463790894",
+"ymin": "0.7328042387962341",
+"ymax": "0.8831523656845093",
+"pretemp_diction": "stain",
+"probability": "71%"
+},
+{
+"xmin": "0.7882661819458008",
+"xmax": "0.9298539757728577",
+"ymin": "0.32111114263534546",
+"ymax": "0.4399329125881195",
+"pretemp_diction": "caries",
+"probability": "93%"
+},
+{
+"xmin": " 0.12002517282962799",
+"xmax": "0.2679625451564789",
+"ymin": "0.45603781938552856",
+"ymax": "0.5643075704574585",
+"pretemp_diction": "caries",
+"probability": "70%"
+},
+{
+"xmin": " 0.0849771648645401",
+"xmax": "0.21730774641036987",
+"ymin": "0.3412032425403595",
+"ymax": "0.4567176401615143",
+"pretemp_diction": "caries",
+"probability": "65%"
+}
+],
+"risk_assessment": {
+"bad_odour_percentage": 50,
+"bleeding_gums_percentage": 50,
+"tooth_decay_percentage": 30
+},
+"mouth_location": {
+"ymin": 200,
+"ymax": 809,
+"xmin": 67,
+"xmax": 701
+}
+}
+}
+
+</pre>
+</div>
+</div>
+
+            </div>
+            </div>
+        
+        
+        
+        
+        
+            <div class="row" id="p2">
+                <div class="col-md-6">
+        
+                    <h4 class="px-3" ><strong> Describing the response:</strong></h4>
+                    <p class="px-3"><strong>Status:</strong></p>
+                    <style>
+                        table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  text-align: center;
+}
+                    </style>
+                    <table class="mx-3 my-3 px-3" id="p5">
+                        <tr>
+                          <th>Serial Number</th>
+                          <th>Status Code</th>
+                          <th>Meaning</th>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>Success</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>1,2,3,4</td>
+                          <td>Request Aborted</td>
+                        </tr>
+                      </table>
+
+                      <h6 class="px-3 " ><strong>Success:</strong> </h6>
+                      <p class="px-3">In the case of a successful status code (0), the response contains the oral screening report generated by MyDentist.AI. The report contains the following fields inside the response:</p>
+                      <ol class="pr-3">
+                          <br>
+                          <li class="small">Mouth_location : MyDentist.AI intelligently finds the location of the oral cavity and removes the unnecessary background information to help you focus on what is important. The coordinates of the oral cavity. The elements inside are xmin, xmax, ymin, ymax. The origin of the coordinate system is the top left corner. You may use the following command in python to fetch the patch containing the mouth:
+                              <br>
+                              mouth_patch = image[ymin:ymax, xmin:xmax]
+                          </li>
+                          <br>
+                          <li class="small">
+                            risk_assessement: This provides the probability of different dental ailments that the patient may face in the next 6 months if she/he doesn’t maintain good oral hygiene.
+                          </li>
+                          <br>
+                          <li class="small">
+                            findings: This contains a list of all the dental abnormalities found by Mydentist.AI in the image provided to it using this API.  The coordinate values should be used in the following way:
+                            <ol type="a">
+                                <li>Once the mouth patch is extracted from the main image, the position of different abnormalities are provided in the form of the coordinates of a rectangle box for the patch.</li>
+                                <li>The coordinates of the box enclosing the dental abnormality is calculated as follows:
+                                    <br>
+                                    <ol type="i" id="p6">
+                                        <li>xmin = mouth_patch.width * response[“findings”][0][“xmin”]  </li>
+                                        <li>xmax = mouth_patch.width * response[“findings”][0][“xmax”]  </li>
+                                        <li>ymin = mouth_patch.height * response[“findings”][0][“ymin”]  </li>
+                                        <li>ymax = mouth_patch.height * response[“findings”][0][“ymax”]  </li>
+                                    </ol>
+                                </li>
+                                <li>pretemp_detection : This contains the name of the finding.</li>
+                            </ol>
+                        </li>
+                      </ol>
+                    </div>
+        <div class="col-md-6" style="height: 100%;">
+        
+                </div>
+            </div>
+            <div class="row my-5 " >
+                <div class="col-md-6">
+                    
+                    <h6 class="px-3" ><strong> Request Aborted:</strong></h6>
+                    <p class="px-3">If the status is non-zero, then the request was not successful. The response contains a human-readable comment that specifies the reason for the abortion of the request.</p>
+                </div>
+        <div class="col-md-6" style="height: 100%;">
+        <h6 class=" px-3"><strong>Request Aborted response:</strong></h6>
+        
+<div class=" p-4 bg-dark rounded mx-3" >
+<div class="sample-code ">
+<p class="small text-white">{"status": 2, "response": "Request aborted. API Key doesn't exist in our database, contact humans@logy.ai to know more."}</p>
+</div>
+                    
+                </div>
+            </div>
+            </div>
+            <footer class="page-footer font-small unique-color-white text-dark pt-3 mt-5" style="background: white;">
+
+                <!-- Footer Links -->
+                <div class="container text-center text-md-left mt-5">
+              
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+              
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              
+                            <!-- Content -->
+                            <h6 class="text-uppercase font-weight-bold" id="foothot">Logy.AI</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                            <p id="footbot">Build quality Artificial Intelligence with minimum effort and without writing a single line of code.
+                                We help you bring your ideas to reality with user-friendly AI building tools. (Legal name of the company: Nex Fitzap Private Limited)
+                                </p>
+              
+                        </div>
+                        <!-- Grid column -->
+              
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              
+                            <!-- Links -->
+                            <h6 class="text-uppercase font-weight-bold" id="foothot">Products</h6>
+                            <hr class=" mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                            <p >
+                                <a class="text-primary" id="footbot" href="https://logy.ai/portal.html">Dental AI</a>
+                            </p>
+                            <p>
+                                <a class="text-primary" id="footbot" href="https://portal.logy.ai/">AutoML Platform</a>
+                            </p>
+                          <!--  <p>
+                                <a href="#!">Pricing</a>
+                            </p> -->
+                            
+              
+                        </div>
+                        <!-- Grid column -->
+              
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              
+                            <!-- Links -->
+                            <h6 class="text-uppercase font-weight-bold" id="foothot">Useful links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                            <p>
+                                <a class="text-primary" id="footbot" href="https://logy.ai/dentalai_pricing.html">DentalAI Pricing</a>
+                            </p>
+                            <p>
+                                <a class="text-primary" id="footbot" href="https://logy.ai/privacy.html">Privacy Policy</a>
+                            </p>
+                            <p>
+                                <a class="text-primary" id="footbot" href="https://logy.ai/terms_and_conditions.html">Terms and Conditions / Cancellation Policy</a>
+                            </p>
+                            
+                            
+              
+                        </div>
+                        <!-- Grid column -->
+              
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              
+                            <!-- Links -->
+                            <h6 class="text-uppercase font-weight-bold" id="foothot">Contact</h6>
+                            <hr class=" mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                            <p id="footbot">
+                                <i class="fa fa-home mr-3"></i> India / Singapore</p>
+                            <p id="footbot">
+                                <i class="fa fa-envelope mr-3"></i> humans@logy.ai</p>
+                            <p id="footbot">
+                                <i class="fa fa-phone mr-3"></i> +91 70019 72016</p>
+                            
+              
+                        </div>
+                        <!-- Grid column -->
+              
+                    </div>
+                    <!-- Grid row -->
+              
+                </div>
+                <!-- Footer Links -->
+              
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3 text-dark" style="background: white;" id="footbot"> Copyright ©
+                    <a class="text-primary" id="footbot" href="https://logy.ai"> Nex Fitzap Private Limited</a>
+                </div>
+                <!-- Copyright -->
+              
+              </footer>
+        </div>
+    </div>
+
+    
+
+
+     
+</div>
+
+
+
+
+</body>
+<script>
+    $(document).on('click', '.map-point-sm', function() {
+  var show = $(this).data('show');
+  $(show).removeClass("hide").siblings().addClass("hide");
+});
+
+</script>
+</html>
