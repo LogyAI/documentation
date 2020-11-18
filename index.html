@@ -211,34 +211,36 @@ p{
             </h1>
             <div class="col-md-3 ml-3 mb-4 " style="height: 2px;background: #5697d0;width: 75%;"></div>
              
-            <div class="row mb-4">
+            <div class="row mb-4 text-justify">
                 <div class="col-md-6">
                     
                     <h4 class="px-3" ><strong>Introduction</strong> </h4>
                     <p class="px-3">
-                        The MyDentist.AI API is powered by Logy.AI, it lets you get AI powered dental screening results within minutes. A simple HTTPS request allows you to interact with the system. This API can easily be integrated into your application with just about any programming language.
+                        The MyDentist.AI API is powered by Logy.AI, it lets you get AI powered dental screening results within a few seconds. A simple HTTP request allows you to interact with the system. This API can easily be integrated into your application with just about any programming language.
                         <br id="p2">
                         <br>
                         We use RESTful API’s for all communication between your application and our servers. All requests are served in the form of a JSON response with a status code and a human-readable response.</p>
-                        <h4 class="px-3 pt-4" ><strong>Pre-requisites</strong> </h4>
+                        <h4 class="px-3 pt-4" ><strong>Prerequisites</strong> </h4>
                         <p class="px-3">
-                            API endpoint: &lt;api_endpoint&gt;
+                            API endpoint: <span style="border: 2px dashed rgb(214, 22, 70); padding: 2px">api_endpoint</span>
                             <br>
                             <br>
-                            The API endpoint is the location where you send your requests for availing services provided by MyDentis.AI.                            
+                            The API endpoint is the location where you send your requests for availing services provided by MyDentist.AI.                            
                             <br>
                             <br>
-                            SecretKey: &lt;secret_Key&gt;
+                            Secret Key: <span style="border: 2px dashed rgb(214, 22, 70); padding: 2px"> secret_key</span>
                             <br>
                             <br id="p3">
-                            secret_key is a unique confidential key generated for you to enable us to identify the source of the request. Please keep the secret key in a safe place and in trusted hands. This is one of the primary pieces of information used to keep track of the number of requests your make. 
+                            Secret Key is a unique and confidential key generated for you to enable us to identify the source of the request. Please keep this secret key in a safe place and in trusted hands. This is one of the primary pieces of information used to keep track of the number of requests your make. 
                             <br>
                             <br>
-                            General knowledge of making HTTP requests is essential to effectively communicate with the API endpoint provided here.
+                            General knowledge pertaining to making HTTP requests is essential to effectively communicate with the API endpoint provided here.
                             </p>
                             <h4 class="px-3 pt-4" id="p4"><strong>Get started</strong> </h4>
                             <p class="px-3">
-                                We will be showcasing the use of a simple curl command to interact with the APIs. For generating a secret key and the API endpoint for your business please contact <a href="mailto:humans@logy.ai"> humans@logy.ai</a>. Always send only one image at a time. There should be a minimum gap of 60 seconds in between consecutive request made by one user to the server. The method of the request made should be POST.
+                                We will be showcasing the use of a simple curl command to interact with the our services. For generating a secret key and getting to know the API endpoint for your business, please contact <a href="mailto:humans@logy.ai"> humans@logy.ai</a>. Always send only one image at a time. There should be a minimum gap of 60 seconds in between consecutive request made by one user to the server. POST request method should be used while making all the requests. 
+
+                                A simple curl command is provided here to get you started, "test.jpg" is an example image to be analysed for dental abnormalities.  
                             </p>
                 
                 
@@ -282,14 +284,14 @@ p{
                 <div class="inner-basic division-details">
 <div class="initialmsg p-4 bg-dark rounded" >
 <div class="sample-code ">
-<pre class="text-white small" translate="no" dir="ltr" id="code">
-curl -F image=@test.jpg -F secret_key="&lt;secret_key&gt;" "&lt;api_endpoint&gt;"</pre>
+<pre class="text-white small" style="padding:4px" translate="no" dir="ltr" id="code">
+curl -F image=@test.jpg -F secret_key="<span style="border: 2px dashed yellow; "> secret_key</span>" "<span style="border: 2px dashed yellow; ">api_endpoint</span>"</pre>
 </div>
 </div>
 <div class="darwin hide p-4 bg-dark rounded" >
 <div class="sample-code ">
-<pre class="text-white small" translate="no" dir="ltr" id="code">
-curl -F image=@test.jpg -F secret_key="&lt;secret_key&gt;" "&lt;api_endpoint&gt;"</pre>
+  <pre class="text-white small" style="padding:4px" translate="no" dir="ltr" id="code">
+    curl -F image=@test.jpg -F secret_key="<span style="border: 2px dashed yellow; "> secret_key</span>" "<span style="border: 2px dashed yellow; ">api_endpoint</span>"</pre>
 </div>
 </div>
 <div class="ptown hide p-4 bg-dark rounded" >
@@ -442,8 +444,8 @@ coming soon..</pre>
         
         
         
-            <div class="row" id="p2">
-                <div class="col-md-6">
+            <div class="row text-justify" id="p2">
+                <div class="col-md-6 ">
         
                     <h4 class="px-3" ><strong> Describing the response:</strong></h4>
                     <p class="px-3"><strong>Status:</strong></p>
@@ -480,9 +482,11 @@ table {
                       <p class="px-3">In the case of a successful status code (0), the response contains the oral screening report generated by MyDentist.AI. The report contains the following fields inside the response:</p>
                       <ol class="pr-3">
                           <br>
-                          <li class="small">Mouth_location : MyDentist.AI intelligently finds the location of the oral cavity and removes the unnecessary background information to help you focus on what is important. The coordinates of the oral cavity. The elements inside are xmin, xmax, ymin, ymax. The origin of the coordinate system is the top left corner. You may use the following command in python to fetch the patch containing the mouth:
+                          <li class="small">mouth_location : MyDentist.AI intelligently finds the location of the oral cavity and removes the unnecessary background information to help you focus on what is important. The coordinates of the oral cavity are present inside this key, the elements inside are xmin, xmax, ymin and ymax. The origin of the coordinate system is the top left corner. You may use the following command in python to fetch the patch containing the mouth:
                               <br>
-                              mouth_patch = image[ymin:ymax, xmin:xmax]
+                              <div class="text-center">
+                             <code > mouth_patch = image[ymin:ymax, xmin:xmax] </code>
+                            </div>
                           </li>
                           <br>
                           <li class="small">
@@ -492,15 +496,17 @@ table {
                           <li class="small">
                             findings: This contains a list of all the dental abnormalities found by Mydentist.AI in the image provided to it using this API.  The coordinate values should be used in the following way:
                             <ol type="a">
-                                <li>Once the mouth patch is extracted from the main image, the position of different abnormalities are provided in the form of the coordinates of a rectangle box for the patch.</li>
+                                <li>Once the mouth-patch is extracted from the main image, the position of different abnormalities are provided in the form of the coordinates of rectangle shaped boxs for the maouth patch described above.</li>
                                 <li>The coordinates of the box enclosing the dental abnormality is calculated as follows:
                                     <br>
-                                    <ol type="i" id="p6">
+                                    <code>
+                                    <ul type="i" id="p6">
                                         <li>xmin = mouth_patch.width * response[“findings”][0][“xmin”]  </li>
                                         <li>xmax = mouth_patch.width * response[“findings”][0][“xmax”]  </li>
                                         <li>ymin = mouth_patch.height * response[“findings”][0][“ymin”]  </li>
                                         <li>ymax = mouth_patch.height * response[“findings”][0][“ymax”]  </li>
-                                    </ol>
+                                    </ul>
+                                  </code>
                                 </li>
                                 <li>pretemp_detection : This contains the name of the finding.</li>
                             </ol>
@@ -522,11 +528,13 @@ table {
         
 <div class=" p-4 bg-dark rounded mx-3" >
 <div class="sample-code ">
-<p class="small text-white">
+<pre class="text-white small" style="padding:4px" translate="no" dir="ltr" id="code">
     {
         "status": 2, 
-        "response": "Request aborted. API Key doesn't exist in our database, contact humans@logy.ai to know more."
-    }</p>
+        "response": "Request aborted. 
+        API Key doesn't exist in our database, contact 
+        humans@logy.ai to know more."
+    }</pre>
 </div>
                     
                 </div>
@@ -566,6 +574,9 @@ table {
                             <p>
                                 <a class="text-primary" id="footbot" href="https://portal.logy.ai/">AutoML Platform</a>
                             </p>
+                            <p>
+                              <a class="text-primary" id="footbot" href="https://logy.ai/documentation">API Documentation</a>
+                          </p>
                           <!--  <p>
                                 <a href="#!">Pricing</a>
                             </p> -->
