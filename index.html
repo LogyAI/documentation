@@ -1,173 +1,201 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@800&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-<!-- Google Fonts -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-<!-- Bootstrap core CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-<!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@800&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 
 
 
-<!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 
 
 
-<style>
-    html{
-        scroll-behavior: smooth;
+  <style>
+    html {
+      scroll-behavior: smooth;
     }
+
     .hide {
-  display: none;
-}
-#butt{
-    background: rgb(34, 34, 34);
-}
-
-
-p{
-    margin-block-start: 0 !important;
-    margin-block-end: 0 !important;
-}
-    *{
-       font-family: 'Poppins', sans-serif; 
+      display: none;
     }
-    body{
+
+    #butt {
+      background: rgb(34, 34, 34);
+    }
+
+
+    p {
+      margin-block-start: 0 !important;
+      margin-block-end: 0 !important;
+    }
+
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
       background: rgb(250, 250, 250);
-     
-   
+
+
     }
+
     #code::-webkit-scrollbar {
-    display: none;
+      display: none;
     }
-    #cat:focus{
-        background: #000 !important;
-        color: white !important;
+
+    #cat:focus {
+      background: #000 !important;
+      color: white !important;
     }
-    #contentx img{
+
+    #contentx img {
       width: 100%;
       margin-top: 2%;
       margin-bottom: 2%;
     }
-    
-    p{
+
+    p {
       font-size: 2vh;
     }
-   
-    
-    #minright{
+
+
+    #minright {
       font-size: 10px;
       background: rgba(0, 132, 255, 0.8);
     }
-    
-    #infi{
+
+    #infi {
       font-size: 8vh;
     }
-    #foothot{
+
+    #foothot {
       font-family: 'Raleway', sans-serif;
     }
-    #footbot{
+
+    #footbot {
       font-family: 'Open Sans', sans-serif;
       font-size: 16px;
       font-weight: 500;
     }
+
     .carousel .carousel-control-prev-icon {
-    background-image: none;
+      background-image: none;
     }
+
     .carousel .carousel-control-next-icon {
-    background-image: none;
+      background-image: none;
     }
-    .carousel-indicators li{
+
+    .carousel-indicators li {
       background-color: rgba(245, 245, 220, 0);
     }
+
     @media screen and (max-width: 767px) {
-       #viewcar {
-          height: 50vh;
-        }
-       #viewcar2 {
-          border-radius: 15px;
-        }
-        #biglogy{
-          float: left;
-        }
-        #infi{
-          font-size: 5vh;
-        }
-        
+      #viewcar {
+        height: 50vh;
       }
-      @media screen and (max-width: 991px){
-        #map{
-            display: none;
-        }
+
+      #viewcar2 {
+        border-radius: 15px;
       }
-</style>
+
+      #biglogy {
+        float: left;
+      }
+
+      #infi {
+        font-size: 5vh;
+      }
+
+    }
+
+    @media screen and (max-width: 991px) {
+      #map {
+        display: none;
+      }
+    }
+  </style>
 
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logy.AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logy.AI</title>
 </head>
+
 <body>
 
 
 
-    <!--Navbar-->
-    <nav class="sticky-top" >
+  <!--Navbar-->
+  <nav class="sticky-top">
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="box-shadow: none;border-bottom: solid 5px rgb(53, 138, 235);">
-        <div class="container ">
-        
-            <!-- Navbar brand -->
-            <a class="navbar-brand p-0" href="https://logy.ai/" style="font-family: 'Poppins', sans-serif;font-weight: 600;font-size: 30px;">Logy.<span style="color: #428bca;">AI</span></a>
-          
-            <!-- Collapse button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-              aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <!-- Collapsible content -->
-            <div class="collapse navbar-collapse" id="basicExampleNav">
-          
-              <!-- Links -->
-              <ul class="mr-auto"></ul>
-              <!-- Links -->
-          
-              <form class="form-inline p-0 m-0">
-                <div class="md-form my-0 mx-3 ">
-                  <a href="https://logy.ai/" class="" style="font-weight:500 ;font-size: 12px;color: #5697d0;">HOME</a>
-                </div>
-                <div class="md-form my-0 mx-3 " id="p1">
-                  <a href="/articles/" class="text-white" style="font-weight:500 ;font-size: 12px;">ARTICLES</a>
-                </div>
-                <div class="md-form my-0 mx-3 " id="p1">
-                  <a href="/portal.html" class="text-white" style="font-weight:500 ;font-size: 12px;">CASE STUDIES</a>
-                </div>
-                <div class="md-form my-0 mx-3 " id="p1">
-                  <a href="/articles/publications/" class="text-white" style="font-weight:500 ;font-size: 12px;">PUBLICATIONS</a>
-                </div>
-              </form>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+      style="box-shadow: none;border-bottom: solid 5px rgb(53, 138, 235);">
+      <div class="container ">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand p-0" href="https://logy.ai/"
+          style="font-family: 'Poppins', sans-serif;font-weight: 600;font-size: 30px;">Logy.<span
+            style="color: #428bca;">AI</span></a>
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+
+          <!-- Links -->
+          <ul class="mr-auto"></ul>
+          <!-- Links -->
+
+          <form class="form-inline p-0 m-0">
+            <div class="md-form my-0 mx-3 ">
+              <a href="https://logy.ai/" class="" style="font-weight:500 ;font-size: 12px;color: #5697d0;">HOME</a>
             </div>
-            <!-- Collapsible content -->
-          
+            <div class="md-form my-0 mx-3 " id="p1">
+              <a href="/articles/" class="text-white" style="font-weight:500 ;font-size: 12px;">ARTICLES</a>
+            </div>
+            <div class="md-form my-0 mx-3 " id="p1">
+              <a href="/portal.html" class="text-white" style="font-weight:500 ;font-size: 12px;">CASE STUDIES</a>
+            </div>
+            <div class="md-form my-0 mx-3 " id="p1">
+              <a href="/articles/publications/" class="text-white"
+                style="font-weight:500 ;font-size: 12px;">PUBLICATIONS</a>
+            </div>
+          </form>
         </div>
-        </nav>
+        <!-- Collapsible content -->
+
+      </div>
     </nav>
+  </nav>
   <!--/.Navbar-->
 
 
@@ -182,90 +210,118 @@ p{
 
 
 
- 
- <div class="px-md-5 mt-4 mb-4">
+
+  <div class="px-md-5 mt-4 mb-4">
 
     <div class="row">
-        <div class="col-md-2 ">
-            <div class="sticky-top px-3 bg-white py-3 rounded py-3" style="top: 120px;" id="map">
+      <div class="col-md-2 ">
+        <div class="sticky-top px-3 bg-white py-3 rounded py-3" style="top: 120px;" id="map">
 
-                <h4>Contents</h4>
-                <hr>
-                <a class="my-1" href="#p1"><p  class="my-3">Introduction</p></a>
-                <a class="my-1" href="#p2"><p  class="my-3">Prerequisites</p></a>
-                <a class="my-1" href="#p3"><p  class="my-3 ">Get started</p></a>
-                <a class="my-1" href="#p4"><p  class="my-3">Describing the response</p></a>
-                <a class="my-1" href="#p5"><p  class="my-3">Success</p></a>
-                <a class="my-1" href="#p6"><p  class="my-3">Request Aborted</p></a>
-                
-            </div>
-            
-            
+          <h4>Contents</h4>
+          <hr>
+          <a class="my-1" href="#p1">
+            <p class="my-3">Introduction</p>
+          </a>
+          <a class="my-1" href="#p2">
+            <p class="my-3">Prerequisites</p>
+          </a>
+          <a class="my-1" href="#p3">
+            <p class="my-3 ">Get started</p>
+          </a>
+          <a class="my-1" href="#p4">
+            <p class="my-3">Describing the response</p>
+          </a>
+          <a class="my-1" href="#p5">
+            <p class="my-3">Success</p>
+          </a>
+          <a class="my-1" href="#p6">
+            <p class="my-3">Request Aborted</p>
+          </a>
+          <a class="my-1" href="#p7">
+            <p class="my-3">PDF Response</p>
+          </a>
+
         </div>
-        <div class="col-md-10">
-            <h2 class="px-3 " >
-              <strong>
 
-                API Documentation
-              </strong>
-            </h1>
-            <div class="col-md-3 ml-3 mb-4 " style="height: 2px;background: #5697d0;width: 75%;"></div>
-             
-            <div class="row mb-4 text-justify">
-                <div class="col-md-6">
-                    
-                    <h4 class="px-3" ><strong>Introduction</strong> </h4>
-                    <p class="px-3">
-                        The MyDentist.AI API is powered by Logy.AI, it lets you get AI powered dental screening results within a few seconds. A simple HTTP request allows you to interact with the system. This API can easily be integrated into your application with just about any programming language.
-                        <br id="p2">
-                        <br>
-                        We use RESTful API for all communication between your application and our servers. All requests are served in the form of a JSON response with a status code and a human-readable response.</p>
-                        <h4 class="px-3 pt-4" ><strong>Prerequisites</strong> </h4>
-                        <p class="px-3">
-                            API endpoint: <span style="border: 2px dashed rgb(214, 22, 70); padding: 2px">api_endpoint</span>
-                            <br>
-                            <br>
-                            The API endpoint is the location where you send your requests for availing services provided by MyDentist.AI.                            
-                            <br>
-                            <br>
-                            Secret Key: <span style="border: 2px dashed rgb(214, 22, 70); padding: 2px"> secret_key</span>
-                            <br>
-                            <br id="p3">
-                            Secret Key is a unique and confidential key generated for you to enable us to identify the source of the request. Please keep this secret key in a safe place and in trusted hands. This is one of the primary pieces of information used to keep track of the number of requests your make. 
-                            <br>
-                            <br>
-                            General knowledge pertaining to making HTTP requests is essential to effectively communicate with the API endpoint provided here.
-                            </p>
-                            <h4 class="px-3 pt-4" id="p4"><strong>Get started</strong> </h4>
-                            <p class="px-3">
-                                We will be showcasing the use of a simple curl command to interact with our services. For generating a secret key and getting to know the API endpoint for your business, please contact <a href="mailto:humans@logy.ai"> humans@logy.ai</a>. Always send only one image at a time. There should be a minimum gap of 60 seconds in between consecutive request made by one user to the server. POST request method should be used while making all the requests. 
 
-                                A simple curl command is provided here to get you started, "test.jpg" is an example image to be analysed for dental abnormalities.  
-                            </p>
-                
-                
-                
-                
-                </div>
-        
-        
-        
-        
-        
-        
-        
-                <div class="col-md-6 " style="height: 100%;">
-                  <h6 class="mt-0 px-3"><strong>Curl Command:</strong>  </h6>
-            <div class="map-container mb-1 px-3">
-                <div class="inner-basic row px-3 division-map div-toggle" data-target=".division-details" id="divisiondetail">
+      </div>
+      <div class="col-md-10">
+        <h2 class="px-3 ">
+          <strong>
+
+            API Documentation
+          </strong>
+          </h1>
+          <div class="col-md-3 ml-3 mb-4 " style="height: 2px;background: #5697d0;width: 75%;"></div>
+
+          <div class="row mb-4 text-justify">
+            <div class="col-md-6">
+
+              <h4 class="px-3"><strong>Introduction</strong> </h4>
+              <p class="px-3">
+                The MyDentist.AI API is powered by Logy.AI, it lets you get AI powered dental screening results within a
+                few seconds. A simple HTTP request allows you to interact with the system. This API can easily be
+                integrated into your application with just about any programming language.
+                <br id="p2">
+                <br>
+                We use RESTful API for all communication between your application and our servers. All requests are
+                served in the form of a JSON response with a status code and a human-readable response.</p>
+              <h4 class="px-3 pt-4"><strong>Prerequisites</strong> </h4>
+              <p class="px-3">
+                API endpoint: <span style="border: 2px dashed rgb(214, 22, 70); padding: 2px">api_endpoint</span>
+                <br>
+                <br>
+                The API endpoint is the location where you send your requests for availing services provided by
+                MyDentist.AI.
+                <br>
+                <br>
+                Secret Key: <span style="border: 2px dashed rgb(214, 22, 70); padding: 2px"> secret_key</span>
+                <br>
+                <br id="p3">
+                Secret Key is a unique and confidential key generated for you to enable us to identify the source of the
+                request. Please keep this secret key in a safe place and in trusted hands. This is one of the primary
+                pieces of information used to keep track of the number of requests your make.
+                <br>
+                <br>
+                General knowledge pertaining to making HTTP requests is essential to effectively communicate with the
+                API endpoint provided here.
+              </p>
+              <h4 class="px-3 pt-4" id="p4"><strong>Get started</strong> </h4>
+              <p class="px-3">
+                We will be showcasing the use of a simple curl command to interact with our services. For generating a
+                secret key and getting to know the API endpoint for your business, please contact <a
+                  href="mailto:humans@logy.ai"> humans@logy.ai</a>. Always send only one image at a time. There should
+                be a minimum gap of 60 seconds in between consecutive request made by one user to the server. POST
+                request method should be used while making all the requests.
+
+                A simple curl command is provided here to get you started, "test.jpg" is an example image to be analysed
+                for dental abnormalities.
+              </p>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="col-md-6 " style="height: 100%;">
+              <h6 class="mt-0 px-3"><strong>Curl Command:</strong> </h6>
+              <div class="map-container mb-1 px-3">
+                <div class="inner-basic row px-3 division-map div-toggle" data-target=".division-details"
+                  id="divisiondetail">
                   <a class="map-point-sm px-2  text-white rounded mx-1" data-show=".darwin" id="butt">
                     <div class="content">
                       <div class="centered-y">
                         <p>Curl</p>
                       </div>
                     </div>
-                </a>
-                <!--
+                  </a>
+                  <!--
 
                   <a class="map-point-sm px-2  text-white rounded mx-1" data-show=".ptown" id="butt">
                     <div class="content">
@@ -275,41 +331,41 @@ p{
                     </div>
                 </a>
                 -->
-                  
+
                 </div><!-- end inner basic -->
               </div>
-              
-              
+
+
               <div class="map-container px-3">
                 <div class="inner-basic division-details">
-<div class="initialmsg p-4 bg-dark rounded" >
-<div class="sample-code ">
-<pre class="text-white small" style="padding:4px" translate="no" dir="ltr" id="code">
+                  <div class="initialmsg p-4 bg-dark rounded">
+                    <div class="sample-code ">
+                      <pre class="text-white small" style="padding:4px" translate="no" dir="ltr" id="code">
 curl -F image=@test.jpg -F secret_key="<span style="border: 2px dashed yellow; "> secret_key</span>" "<span style="border: 2px dashed yellow; ">api_endpoint</span>"</pre>
-</div>
-</div>
-<div class="darwin hide p-4 bg-dark rounded" >
-<div class="sample-code ">
-  <pre class="text-white small" style="padding:4px" translate="no" dir="ltr" id="code">
+                    </div>
+                  </div>
+                  <div class="darwin hide p-4 bg-dark rounded">
+                    <div class="sample-code ">
+                      <pre class="text-white small" style="padding:4px" translate="no" dir="ltr" id="code">
     curl -F image=@test.jpg -F secret_key="<span style="border: 2px dashed yellow; "> secret_key</span>" "<span style="border: 2px dashed yellow; ">api_endpoint</span>"</pre>
-</div>
-</div>
-<div class="ptown hide p-4 bg-dark rounded" >
-<div class="sample-code ">
-<pre class="text-white small" translate="no" dir="ltr" id="code">
+                    </div>
+                  </div>
+                  <div class="ptown hide p-4 bg-dark rounded">
+                    <div class="sample-code ">
+                      <pre class="text-white small" translate="no" dir="ltr" id="code">
 coming soon..</pre>
-</div>
-</div>
+                    </div>
+                  </div>
 
-                  
-                  
+
+
                 </div>
               </div>
-        
-<h6 class="mt-4 px-3"><strong> JSON Response:</strong> </h6>
-<div class=" p-4 mx-3 bg-dark rounded" style="height: 100%;">
-<div class="sample-code ">
-<pre class="text-white" style="height: 500px;" translate="no" dir="ltr" id="code">
+
+              <h6 class="mt-4 px-3"><strong> JSON Response:</strong> </h6>
+              <div class=" p-4 mx-3 bg-dark rounded" style="height: 100%;">
+                <div class="sample-code ">
+                  <pre class="text-white" style="height: 500px;" translate="no" dir="ltr" id="code">
 {
 "status": 0,
 "response": {
@@ -434,72 +490,83 @@ coming soon..</pre>
 }
 
 </pre>
-</div>
-</div>
+                </div>
+              </div>
 
             </div>
-            </div>
-        
-        
-        
-        
-        
-            <div class="row text-justify" id="p2">
-                <div class="col-md-6 ">
-        
-                    <h4 class="px-3" ><strong> Describing the response:</strong></h4>
-                    <p class="px-3"><strong>Status:</strong></p>
-                    <style>
-                        table, td, th {
-  border: 1px solid black;
-}
+          </div>
 
-table {
-  width: 90%;
-  border-collapse: collapse;
-  text-align: center;
-}
-                    </style>
-                    <table class="mx-3 my-3 px-3" id="p5">
-                        <tr>
-                          <th>Serial Number</th>
-                          <th>Status Code</th>
-                          <th>Meaning</th>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>0</td>
-                          <td>Success</td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>1,2,3,4</td>
-                          <td>Request Aborted</td>
-                        </tr>
-                      </table>
 
-                      <h6 class="px-3 " ><strong>Success:</strong> </h6>
-                      <p class="px-3">In the case of a successful status code (0), the response contains the oral screening report generated by MyDentist.AI. The report contains the following fields inside the response:</p>
-                      <ol class="pr-3">
-                          <br>
-                          <li class="small">mouth_location : MyDentist.AI intelligently finds the location of the oral cavity and removes the unnecessary background information to help you focus on what is important. The coordinates of the oral cavity are present inside this key, the elements inside are xmin, xmax, ymin and ymax. The origin of the coordinate system is the top left corner. You may use the following command in python to fetch the patch containing the mouth:
-                              <br>
-                              <div class="text-center">
-                             <code > mouth_patch = image[ymin:ymax, xmin:xmax] </code>
-                            </div>
-                          </li>
-                          <br>
-                          <li class="small">
-                            risk_assessement: This provides the probability of different dental ailments that the patient may face in the next 6 months if she/he doesn’t maintain good oral hygiene.
-                          </li>
-                          <br>
-                          <li class="small">
-                            findings: This contains a list of all the dental abnormalities found by Mydentist.AI in the image provided to it using this API.  The coordinate values should be used in the following way:
-                            <ol type="a">
-                                <li>Once the mouth-patch is extracted from the main image, the position of different abnormalities are provided in the form of the coordinates of rectangle shaped boxs for the maouth patch described above.</li>
-                                <li>The coordinates of the box enclosing the dental abnormality is calculated as follows:
-                                    <br>
-                                    <code>
+
+
+
+          <div class="row text-justify" id="p2">
+            <div class="col-md-6 ">
+
+              <h4 class="px-3"><strong> Describing the response:</strong></h4>
+              <p class="px-3"><strong>Status:</strong></p>
+              <style>
+                table,
+                td,
+                th {
+                  border: 1px solid black;
+                }
+
+                table {
+                  width: 90%;
+                  border-collapse: collapse;
+                  text-align: center;
+                }
+              </style>
+              <table class="mx-3 my-3 px-3" id="p5">
+                <tr>
+                  <th>Serial Number</th>
+                  <th>Status Code</th>
+                  <th>Meaning</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>Success</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>1,2,3,4,5</td>
+                  <td>Request Aborted</td>
+                </tr>
+              </table>
+
+              <h6 class="px-3 "><strong>Success:</strong> </h6>
+              <p class="px-3">In the case of a successful status code (0), the response contains the oral screening
+                report generated by MyDentist.AI. The report contains the following fields inside the response:</p>
+              <ol class="pr-3">
+                <br>
+                <li class="small">mouth_location : MyDentist.AI intelligently finds the location of the oral cavity and
+                  removes the unnecessary background information to help you focus on what is important. The coordinates
+                  of the oral cavity are present inside this key, the elements inside are xmin, xmax, ymin and ymax. The
+                  origin of the coordinate system is the top left corner. You may use the following command in python to
+                  fetch the patch containing the mouth:
+                  <br>
+                  <div class="text-center">
+                    <code> mouth_patch = image[ymin:ymax, xmin:xmax] </code>
+                  </div>
+                </li>
+                <br>
+                <li class="small">
+                  risk_assessement: This provides the probability of different dental ailments that the patient may face
+                  in the next 6 months if she/he doesn’t maintain good oral hygiene.
+                </li>
+                <br>
+                <li class="small">
+                  findings: This contains a list of all the dental abnormalities found by Mydentist.AI in the image
+                  provided to it using this API. The coordinate values should be used in the following way:
+                  <ol type="a">
+                    <li>Once the mouth-patch is extracted from the main image, the position of different abnormalities
+                      are provided in the form of the coordinates of rectangle shaped boxs for the maouth patch
+                      described above.</li>
+                    <li>The coordinates of the box enclosing the dental abnormality is calculated as follows:
+                      <br>
+                      <code>
                                     <ul type="i" id="p6">
                                         <li>xmin = mouth_patch.width * response[“findings”][0][“xmin”]  </li>
                                         <li>xmax = mouth_patch.width * response[“findings”][0][“xmax”]  </li>
@@ -507,156 +574,196 @@ table {
                                         <li>ymax = mouth_patch.height * response[“findings”][0][“ymax”]  </li>
                                     </ul>
                                   </code>
-                                </li>
-                                <li>pretemp_detection : This contains the name of the finding.</li>
-                            </ol>
-                        </li>
-                      </ol>
-                    </div>
-        <div class="col-md-6" style="height: 100%;">
-        
-                </div>
+                    </li>
+                    <li>pretemp_detection : This contains the name of the finding.</li>
+                  </ol>
+                </li>
+              </ol>
             </div>
-            <div class="row my-5 " >
-                <div class="col-md-6">
-                    
-                    <h6 class="px-3" ><strong> Request Aborted:</strong></h6>
-                    <p class="px-3">If the status is non-zero, then the request was not successful. The response contains a human-readable comment that specifies the reason for the abortion of request. 
-                      <hr/>
-                    For any queries, feel free to reach out to us at <a href="mailto:humans@logy.ai"> humans@logy.ai</a>. 
-                    </p>
-                </div>
-        <div class="col-md-6" style="height: 100%;">
-        <h6 class=" px-3"><strong>Response for Aborted Request:</strong></h6>
-        
-<div class=" p-4 bg-dark rounded mx-3" >
-<div class="sample-code ">
-<pre class="text-white small" style="padding:4px" translate="no" dir="ltr" id="code">
-    {
-        "status": 2, 
-        "response": "Request aborted. 
-        API Key doesn't exist in our database, contact 
-        humans@logy.ai to know more."
-    }</pre>
-</div>
-                    
-                </div>
-            </div>
-            </div>
-            <footer class="page-footer font-small unique-color-white text-dark pt-3 mt-5" style="background: white;">
+            <div class="col-md-6" style="height: 100%;">
 
-                <!-- Footer Links -->
-                <div class="container text-center text-md-left mt-5">
+            </div>
+          </div>
+          <div class="row my-5 ">
+            <div class="col-md-6">
+
+              <h6 class="px-3"><strong> Request Aborted:</strong></h6>
+              <p class="px-3">If the status is non-zero, then the request was not successful. The response contains a
+                human-readable comment that specifies the reason for the abortion of request.
+                </p>
+            </div>
+            <div class="col-md-6" style="height: 100%;">
+              <h6 class=" px-3"><strong>Response for Aborted Request:</strong></h6>
+
+              <div class=" p-4 bg-dark rounded mx-3">
+                <div class="sample-code ">
+                  <pre class="text-white small" style="padding:4px" translate="no" dir="ltr" id="code">
+{
+    "status": 2, 
+    "response": "Request aborted. 
+    API Key doesn't exist in our database, contact 
+    humans@logy.ai to know more."
+}</pre>
+                </div>
+
+              </div>
+            </div>
+            <div id="p7" class="col-md-6">
+
+              <h4  class="px-3"><strong>PDF Response</strong> </h4>
+              <p  class="px-3  text-justify">
+                To get a PDF response, use the curl command provided here. More number of parameters need to be provided to get the consolidated report. The call to this API endpoint if successful will return a PDF document with no status code. In case of abortion of request, the behaviour stated in the previous section will prevail with JSON response containing a status code and a human-readable response.
+                <br/>
+                <br/>
+                Description of the parameters and ideal responses suggested by us.
+                <ul type="i" id="p6">
+                  <li><code>name</code>: Name of the individual being screened. (Idea option: Alphabets+space)  </li>
+                  <li><code>age</code>: age of the indiidual being screened. (Idea option: Only Number)  </li>
+                  <li><code>gender</code>: gender of teh individual being screened. (Idea option: Female/Male/Prefer not to say) </li>
+                  <li><code>tobacco_habits</code>: tobacco habits of the individual being screened. (Idea option: Yes/No)  </li>
+                  <li><code>brushing_habits</code>: brushing habits of the individual being screened. (Idea option: Once daily/Twice daily/ More than twice daily)  </li>
+                  <li><code>dental_visit</code>: Number of dentist visits the individual being screened makes. (Idea option: Every 3 months/ Every 6 months/ Once a year/As per need)  </li>
+              </ul>
+                Our service doesn't perform sanity check for the validity of the parameter values, the developers are requested to perform these checks before engendering a request.
+                <hr />
+                For any queries, feel free to reach out to us at <a href="mailto:humans@logy.ai"> humans@logy.ai</a>.
               
-                    <!-- Grid row -->
-                    <div class="row mt-3">
-              
-                        <!-- Grid column -->
-                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              
-                            <!-- Content -->
-                            <h6 class="text-uppercase font-weight-bold" id="foothot">Logy.AI</h6>
-                            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                            <p id="footbot">Build quality Artificial Intelligence with minimum effort and without writing a single line of code.
-                                We help you bring your ideas to reality with user-friendly AI building tools. (Legal name of the company: Nex Fitzap Private Limited)
-                                </p>
-              
-                        </div>
-                        <!-- Grid column -->
-              
-                        <!-- Grid column -->
-                        <!-- Grid column -->
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              
-                            <!-- Links -->
-                            <h6 class="text-uppercase font-weight-bold" id="foothot">Products</h6>
-                            <hr class=" mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                            <p >
-                                <a class="text-primary" id="footbot" href="https://logy.ai/portal.html">Dental AI</a>
-                            </p>
-                            <p>
-                                <a class="text-primary" id="footbot" href="https://portal.logy.ai/">AutoML Platform</a>
-                            </p>
-                            <p>
-                              <a class="text-primary" id="footbot" href="https://logy.ai/documentation">API Documentation</a>
-                          </p>
-                          <!--  <p>
+                </p>
+            </div>
+            <div class="col-md-6" style="height: 100%;">
+              <hr/>
+              <h6 class=" px-3"><strong>Curl Command for PDF</strong></h6>
+
+              <div class=" p-4 bg-dark rounded mx-3">
+                <div class="sample-code ">
+<pre class="text-white small" style="padding:4px" translate="no" dir="ltr" id="code">
+  curl -F image=@test.jpg -F secret_key="<span style="border: 2px dashed yellow; "> secret_key</span>" -F name="test" "<span style="border: 2px dashed yellow; ">api_endpoint</span>" -F age=22 -F gender="Male" -F tobacco_habits="No" -F "brushing_habits"="Once Daily" -F dental_visit="As per need" --output "test.pdf"
+</pre>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <footer class="page-footer font-small unique-color-white text-dark pt-3 mt-5" style="background: white;">
+
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left mt-5">
+
+              <!-- Grid row -->
+              <div class="row mt-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                  <!-- Content -->
+                  <h6 class="text-uppercase font-weight-bold" id="foothot">Logy.AI</h6>
+                  <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                  <p id="footbot">Build quality Artificial Intelligence with minimum effort and without writing a single
+                    line of code.
+                    We help you bring your ideas to reality with user-friendly AI building tools. (Legal name of the
+                    company: Nex Fitzap Private Limited)
+                  </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                  <!-- Links -->
+                  <h6 class="text-uppercase font-weight-bold" id="foothot">Products</h6>
+                  <hr class=" mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                  <p>
+                    <a class="text-primary" id="footbot" href="https://logy.ai/portal.html">Dental AI</a>
+                  </p>
+                  <p>
+                    <a class="text-primary" id="footbot" href="https://portal.logy.ai/">AutoML Platform</a>
+                  </p>
+                  <p>
+                    <a class="text-primary" id="footbot" href="https://logy.ai/documentation">API Documentation</a>
+                  </p>
+                  <!--  <p>
                                 <a href="#!">Pricing</a>
                             </p> -->
-                            
-              
-                        </div>
-                        <!-- Grid column -->
-              
-                        <!-- Grid column -->
-                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              
-                            <!-- Links -->
-                            <h6 class="text-uppercase font-weight-bold" id="foothot">Useful links</h6>
-                            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                            <p>
-                                <a class="text-primary" id="footbot" href="https://logy.ai/dentalai_pricing.html">DentalAI Pricing</a>
-                            </p>
-                            <p>
-                                <a class="text-primary" id="footbot" href="https://logy.ai/privacy.html">Privacy Policy</a>
-                            </p>
-                            <p>
-                                <a class="text-primary" id="footbot" href="https://logy.ai/terms_and_conditions.html">Terms and Conditions / Cancellation Policy</a>
-                            </p>
-                            
-                            
-              
-                        </div>
-                        <!-- Grid column -->
-              
-                        <!-- Grid column -->
-                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              
-                            <!-- Links -->
-                            <h6 class="text-uppercase font-weight-bold" id="foothot">Contact</h6>
-                            <hr class=" mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                            <p id="footbot">
-                                <i class="fa fa-home mr-3"></i> India / Singapore</p>
-                            <p id="footbot">
-                                <i class="fa fa-envelope mr-3"></i> humans@logy.ai</p>
-                            <p id="footbot">
-                                <i class="fa fa-phone mr-3"></i> +91 70019 72016</p>
-                            
-              
-                        </div>
-                        <!-- Grid column -->
-              
-                    </div>
-                    <!-- Grid row -->
-              
+
+
                 </div>
-                <!-- Footer Links -->
-              
-                <!-- Copyright -->
-                <div class="footer-copyright text-center py-3 text-dark" style="background: white;" id="footbot"> Copyright ©
-                    <a class="text-primary" id="footbot" href="https://logy.ai"> Nex Fitzap Private Limited</a>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                  <!-- Links -->
+                  <h6 class="text-uppercase font-weight-bold" id="foothot">Useful links</h6>
+                  <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                  <p>
+                    <a class="text-primary" id="footbot" href="https://logy.ai/dentalai_pricing.html">DentalAI
+                      Pricing</a>
+                  </p>
+                  <p>
+                    <a class="text-primary" id="footbot" href="https://logy.ai/privacy.html">Privacy Policy</a>
+                  </p>
+                  <p>
+                    <a class="text-primary" id="footbot" href="https://logy.ai/terms_and_conditions.html">Terms and
+                      Conditions / Cancellation Policy</a>
+                  </p>
+
+
+
                 </div>
-                <!-- Copyright -->
-              
-              </footer>
-        </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                  <!-- Links -->
+                  <h6 class="text-uppercase font-weight-bold" id="foothot">Contact</h6>
+                  <hr class=" mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                  <p id="footbot">
+                    <i class="fa fa-home mr-3"></i> India / Singapore</p>
+                  <p id="footbot">
+                    <i class="fa fa-envelope mr-3"></i> humans@logy.ai</p>
+                  <p id="footbot">
+                    <i class="fa fa-phone mr-3"></i> +91 70019 72016</p>
+
+
+                </div>
+                <!-- Grid column -->
+
+              </div>
+              <!-- Grid row -->
+
+            </div>
+            <!-- Footer Links -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3 text-dark" style="background: white;" id="footbot"> Copyright
+              ©
+              <a class="text-primary" id="footbot" href="https://logy.ai"> Nex Fitzap Private Limited</a>
+            </div>
+            <!-- Copyright -->
+
+          </footer>
+      </div>
     </div>
 
-    
 
 
-     
-</div>
+
+
+  </div>
 
 
 
 
 </body>
 <script>
-    $(document).on('click', '.map-point-sm', function() {
-  var show = $(this).data('show');
-  $(show).removeClass("hide").siblings().addClass("hide");
-});
+  $(document).on('click', '.map-point-sm', function () {
+    var show = $(this).data('show');
+    $(show).removeClass("hide").siblings().addClass("hide");
+  });
 
 </script>
+
 </html>
