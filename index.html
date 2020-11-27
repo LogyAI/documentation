@@ -341,13 +341,42 @@
 
 
 
+            
+          </div>
+
+
+
+          
+
+          <div class="row text-justify" id="p2">
+            <div id="p7" class="col-md-6">
+
+              <h6  class="px-3"><strong>PDF Response</strong> </h6>
+              <p  class="px-3  text-justify">
+                To get a PDF response, use the curl command provided here. More number of parameters need to be provided to get the consolidated report. The call to this API endpoint if successful will return a PDF document with no status code. In case of abortion of request, the behaviour stated in the previous section will prevail with JSON response containing a status code and a human-readable response.
+                <br/>
+                <br/>
+                Description of the parameters and ideal responses suggested by us.
+                <ul type="i" id="p6">
+                  <li><code>name</code>: Name of the individual being screened. (Idea option: Alphabets+space)  </li>
+                  <li><code>age</code>: Age of the individual being screened. (Idea option: Only Number)  </li>
+                  <li><code>gender</code>: gender of teh individual being screened. (Idea options: Female/Male/Prefer not to say) </li>
+                  <li><code>tobacco_habits</code>: tobacco habits of the individual being screened. (Idea options: Yes/No)  </li>
+                  <li><code>brushing_habits</code>: brushing habits of the individual being screened. (Idea options: Once daily/Twice daily/ More than twice daily)  </li>
+                  <li><code>dental_visit</code>: Number of visits the individual being screened makes to a dental clinic. (Idea options: Every 3 months/ Every 6 months/ Once a year/As per need)  </li>
+              </ul>
+                Our service doesn't perform sanity check for the validity of the parameter values, the developers are requested to perform these checks before engendering a request.
+                
+                </p>
+            </div>
+            
             <div class="col-md-6 " style="height: 100%;">
-              <h6 class="mt-0 px-3"><strong>Example Report:</strong> </h6> 
+              <h6 class="mt-0 px-3"><strong>Command:</strong> </h6> 
               <div class="map-container mb-1 px-3">
-                <img  style="width:100%"src = "example.png"/>
+                <!-- <img  style="width:100%"src = "example.png"/> -->
                 <div class="inner-basic row px-3 division-map div-toggle" data-target=".division-details"
                   id="divisiondetail">
-                  <!--<a class="map-point-sm px-2  text-white rounded mx-1" data-show=".darwin" id="butt">
+                  <a class="map-point-sm px-2  text-white rounded mx-1" data-show=".darwin" id="butt">
                     <div class="content">
                       <div class="centered-y">
                         <p>Curl</p>
@@ -359,41 +388,62 @@
                   <a class="map-point-sm px-2  text-white rounded mx-1" data-show=".ptown" id="butt">
                     <div class="content">
                       <div class="centered-y">
-                        <p>soon</p>
+                        <p>Python</p>
                       </div>
                     </div>
                 </a>
-                -->
+               
 
                 </div><!-- end inner basic -->
               </div>
 
 
-              <!-- <div class="map-container px-3">
+              <div class="map-container px-3">
                 <div class="inner-basic division-details">
                   <div class="initialmsg p-4 bg-dark rounded">
                     <div class="sample-code ">
                       <pre class="text-white small" style="padding:4px" translate="no" dir="ltr" id="code">
-curl -F image=@test.jpg -F secret_key="<span style="border: 2px dashed yellow; "> secret_key</span>" "<span style="border: 2px dashed yellow; ">api_endpoint</span>"</pre>
+curl -F image=@test.jpg -F secret_key="<span style="border: 2px dashed yellow; "> secret_key</span>" -F name="test" "<span style="border: 2px dashed yellow; ">api_endpoint</span>" -F age=22 -F gender="Male" -F tobacco_habits="No" -F "brushing_habits"="Once Daily" -F dental_visit="As per need" --output "Logy.AI-report.pdf"
+                                              </pre>
                     </div>
                   </div>
                   <div class="darwin hide p-4 bg-dark rounded">
                     <div class="sample-code ">
                       <pre class="text-white small" style="padding:4px" translate="no" dir="ltr" id="code">
-    curl -F image=@test.jpg -F secret_key="<span style="border: 2px dashed yellow; "> secret_key</span>" "<span style="border: 2px dashed yellow; ">api_endpoint</span>"</pre>
+curl -F image=@test.jpg -F secret_key="<span style="border: 2px dashed yellow; "> secret_key</span>" -F name="test" "<span style="border: 2px dashed yellow; ">api_endpoint</span>" -F age=22 -F gender="Male" -F tobacco_habits="No" -F "brushing_habits"="Once Daily" -F dental_visit="As per need" --output "test.pdf"
+                      </pre>
                     </div>
                   </div>
                   <div class="ptown hide p-4 bg-dark rounded">
                     <div class="sample-code ">
-                      <pre class="text-white small" translate="no" dir="ltr" id="code">
-coming soon..</pre>
+                      <pre class="text-white small" style="padding:4px" translate="no" dir="ltr" id="code">
+import requests
+
+payload = {
+    'image' : open('test.jpg','rb'),
+    
+    }
+data = {
+    'name':'test',
+    'secret_key':'<span style="border: 2px dashed yellow; "> secret_key</span>',
+    'age': 22,
+    "gender": "Male",
+    "tobacco_habits" : "No",
+    "brushing_habits": "Once_daily",
+    "dental_visit" : "As per need"
+}
+
+response = requests.post('<span style="border: 2px dashed yellow; ">api_endpoint</span>',files=payload, data=data)
+open("Logy.AI-report.pdf",'wb').write(response.content)
+                        
+                        </pre>
                     </div>
                   </div>
 
 
 
                 </div>
-              </div> -->
+              </div>
 
               <!-- <h6 class="mt-4 px-3"><strong> JSON Response:</strong> </h6> -->
               <!-- <div class=" p-4 mx-3 bg-dark rounded" style="height: 100%;">
@@ -527,34 +577,9 @@ coming soon..</pre>
               </div> -->
 
             </div>
-          </div>
 
 
-
-          
-
-          <div class="row text-justify" id="p2">
-            <div id="p7" class="col-md-6">
-
-              <h6  class="px-3"><strong>PDF Response</strong> </h6>
-              <p  class="px-3  text-justify">
-                To get a PDF response, use the curl command provided here. More number of parameters need to be provided to get the consolidated report. The call to this API endpoint if successful will return a PDF document with no status code. In case of abortion of request, the behaviour stated in the previous section will prevail with JSON response containing a status code and a human-readable response.
-                <br/>
-                <br/>
-                Description of the parameters and ideal responses suggested by us.
-                <ul type="i" id="p6">
-                  <li><code>name</code>: Name of the individual being screened. (Idea option: Alphabets+space)  </li>
-                  <li><code>age</code>: Age of the individual being screened. (Idea option: Only Number)  </li>
-                  <li><code>gender</code>: gender of teh individual being screened. (Idea options: Female/Male/Prefer not to say) </li>
-                  <li><code>tobacco_habits</code>: tobacco habits of the individual being screened. (Idea options: Yes/No)  </li>
-                  <li><code>brushing_habits</code>: brushing habits of the individual being screened. (Idea options: Once daily/Twice daily/ More than twice daily)  </li>
-                  <li><code>dental_visit</code>: Number of visits the individual being screened makes to a dental clinic. (Idea options: Every 3 months/ Every 6 months/ Once a year/As per need)  </li>
-              </ul>
-                Our service doesn't perform sanity check for the validity of the parameter values, the developers are requested to perform these checks before engendering a request.
-                
-                </p>
-            </div>
-            <div class="col-md-6" style="height: 100%;">
+            <!-- <div class="col-md-6" style="height: 100%;">
               <hr/>
               <h6 class=" px-3"><strong>Curl Command for PDF</strong></h6>
 
@@ -566,7 +591,7 @@ coming soon..</pre>
                 </div>
 
               </div>
-            </div>
+            </div> -->
             <!-- <div class="col-md-6 ">
 
               <h4 class="px-3"><strong> Describing the response:</strong></h4>
